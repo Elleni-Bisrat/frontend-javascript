@@ -4,10 +4,14 @@ namespace Subjects {
     lastName: string;
   }
 
-  export class Subject {
+  export interface Subject {
+    setTeacher(teacher: Teacher): void;
+  }
+
+  export class SubjectClass implements Subject {
     teacher: Teacher;
 
-    setTeacher(teacher: Teacher) {
+    setTeacher(teacher: Teacher): void {
       this.teacher = teacher;
     }
   }

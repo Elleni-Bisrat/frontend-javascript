@@ -16,7 +16,7 @@ const stu2: Student = {
   age: 24,
   location: "canada",
 };
-const studentList: Student[] = [stu1, stu2];
+const studentsList: Student[] = [stu1, stu2];
 function createStudentsTable(students: Student[]): HTMLTableElement {
   const table: HTMLTableElement = document.createElement("table");
   table.style.borderCollapse = "collapse";
@@ -55,7 +55,7 @@ function createStudentsTable(students: Student[]): HTMLTableElement {
 
 window.addEventListener("DOMContentLoaded", (): void => {
   const root: HTMLElement | null = document.getElementById("root");
-  const table: HTMLTableElement = createStudentsTable(studentList);
+  const table: HTMLTableElement = createStudentsTable(studentsList);
   if (root) {
     root.appendChild(table);
   } else {

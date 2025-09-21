@@ -1,51 +1,97 @@
-# Task 0: Creating an Interface for a Student
+📘 README.md
 
-## Description
-This task demonstrates the use of **TypeScript interfaces** to define a `Student` type and the rendering of a table in the browser using **Vanilla JavaScript**. The goal is to model student data and dynamically display it on a webpage.
+📚 Student Table Renderer – TypeScript Project
 
-## Features
-- Defined a `Student` interface with the following properties:
-  - `firstName: string`
-  - `lastName: string`
-  - `age: number`
-  - `location: string`
-- Created two student objects implementing the `Student` interface.
-- Combined the students into an array `studentsList`.
-- Dynamically rendered a table displaying:
-  - The first name of each student
-  - The location of each student
+This project renders a dynamic HTML table using TypeScript and vanilla JavaScript. It demonstrates basic TypeScript interfaces, DOM manipulation, and frontend bundling with Webpack.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-url>
-Navigate to the task_0 directory:
+📁 Project Structure
+frontend-javascript/
+└── 0x04-TypeScript/
+    └── task_0/
+        ├── js/
+        │   └── main.ts          # TypeScript source code
+        ├── dist/
+        │   └── main.js          # Webpack output (generated)
+        ├── index.html           # HTML file to load the script
+        ├── package.json         # Project metadata and scripts
+        ├── .eslintrc.js         # ESLint configuration
+        ├── tsconfig.json        # TypeScript compiler settings
+        └── webpack.config.js    # Webpack bundling configuration
 
-bash
-Copy code
-cd 0x04-TypeScript/task_0
+🧠 Features
+
+Defines a Student interface with:
+
+firstName (string)
+
+lastName (string)
+
+age (number)
+
+location (string)
+
+Creates two student objects and stores them in an array called studentsList.
+
+Dynamically renders a table showing each student’s first name and location.
+
+Uses TypeScript for type safety and Webpack for bundling.
+
+ESLint integration ensures clean, error-free code.
+
+🚀 Setup Instructions
+
+Navigate to the project directory:
+
+cd frontend-javascript/0x04-TypeScript/task_0
+
+
 Install dependencies:
 
-bash
-Copy code
 npm install
-Build the project using Webpack:
 
-bash
-Copy code
+
+Build the project:
+
 npm run build
-Open the generated index.html (or served file) in a browser to see the table.
 
-Requirements
-TypeScript for type checking.
 
-Webpack for bundling the project.
+This compiles main.ts into dist/main.js.
 
-All variables use TypeScript typings.
+Run the project:
 
-Vanilla JavaScript is used to manipulate the DOM.
+Open index.html in your browser, or
 
-Example Output
-First Name	Location
-Elleni	Addis Ababa
-John	Canada
+Use a local server:
+
+npm start
+
+
+This launches a local dev server and opens the page automatically.
+
+✅ Requirements
+
+Webpack must compile with no type errors.
+
+All variables and structures must use TypeScript.
+
+Table must render correctly in the browser.
+
+Code must follow ESLint rules.
+
+🛠️ Technologies Used
+
+TypeScript
+
+Webpack
+
+ESLint
+
+Vanilla JavaScript (DOM API)
+
+📌 Notes
+
+The table is styled using inline CSS for simplicity.
+
+You can expand the interface or table to include more fields like age or last name.
+
+This project is ideal for learning TypeScript fundamentals and frontend tooling.

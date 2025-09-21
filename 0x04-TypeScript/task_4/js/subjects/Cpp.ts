@@ -1,5 +1,4 @@
 namespace Subjects {
-  // Declaration merging: add optional experienceTeachingC
   export interface Teacher {
     experienceTeachingC?: number;
   }

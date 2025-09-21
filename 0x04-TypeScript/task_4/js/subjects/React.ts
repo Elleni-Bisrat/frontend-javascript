@@ -1,6 +1,5 @@
 namespace Subjects {
-  // Declaration merging: add optional experienceTeachingReact
-  export interface Teacher {
+\  export interface Teacher {
     experienceTeachingReact?: number;
   }
 

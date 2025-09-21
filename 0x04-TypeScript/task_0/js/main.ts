@@ -1,23 +1,23 @@
-interface student {
+interface Student {
   firstName: string;
   lastName: string;
   age: number;
   location: string;
 }
-const stu1: student = {
+const stu1: Student = {
   firstName: "elleni",
   lastName: "bisrat",
   age: 21,
   location: "addis ababa",
 };
-const stu2: student = {
+const stu2: Student = {
   firstName: "john",
   lastName: "doe",
   age: 24,
   location: "canada",
 };
-const studentList: student[] = [stu1, stu2];
-function createStudentsTable(students: student[]): HTMLTableElement {
+const studentList: Student[] = [stu1, stu2];
+function createStudentsTable(students: Student[]): HTMLTableElement {
   const table: HTMLTableElement = document.createElement("table");
   table.style.borderCollapse = "collapse";
   table.style.width = "50%";
@@ -33,7 +33,7 @@ function createStudentsTable(students: student[]): HTMLTableElement {
   headRow.appendChild(th1);
   headRow.appendChild(th2);
   const tbody: HTMLTableSectionElement = table.createTBody();
-  students.forEach((s: student) => {
+  students.forEach((s: Student) => {
     const row: HTMLTableRowElement = tbody.insertRow();
     const cell1: HTMLTableCellElement = row.insertCell();
     cell1.textContent = s.firstName;

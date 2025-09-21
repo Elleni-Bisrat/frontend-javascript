@@ -1,9 +1,9 @@
 namespace Subjects {
-\  export interface Teacher {
+  export interface Teacher {
     experienceTeachingReact?: number;
   }
 
-  export class React extends Subject {
+  export class React extends SubjectClass  {
     getRequirements(): string {
       return "Here is the list of requirements for React";
     }
